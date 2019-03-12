@@ -1,9 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <UserSecretsId>aspnet-Swagger_Basic_Demo_Jecaestevez-6E1A1747-2687-4C9E-9923-4A0477684599</UserSecretsId>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\nas\github\jecaestevez_demos\swagger\01_Basic\Swagger_Basic_Demo_Jecaestevez\Swagger_Basic_Demo_Jecaestevez.xml</DocumentationFile>
   </PropertyGroup>
 
 

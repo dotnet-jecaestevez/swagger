@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Swagger_Basic_Demo_Jecaestevez</name>
+    </assembly>
+    <members>
+        <member name="M:Swagger_Basic_Demo_Jecaestevez.Controllers.ValuesController.Get">
+            <summary>
+            Gets all the values
+            </summary>        
+            <returns>list of values</returns>
+            <response code="200">Value returned</response>
+            <response code="404">Value was not able to be found</response>
+            <response code="400">Id was below 0</response>
+        </member>
+        <member name="M:Swagger_Basic_Demo_Jecaestevez.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            Gets a value by ID.
+            </summary>
+            <param name="id">The id of the value you wish to get.</param>
+            <returns>value</returns>
+        </member>
+        <member name="M:Swagger_Basic_Demo_Jecaestevez.Controllers.ValuesController.Put(System.Int32,System.String)">
+             <summary>
+             Save a value by ID.
+             </summary>
+             <param name="id">The id of the value you wish to get.</param>
+             <param name="value">The value you wish to put.</param>
+             <remarks>
+             Sample request:
+            
+                 PUT /vALUES
+                 {
+                    "id": 1,
+                    "name": "Item1"
+                 }
+             </remarks>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:Swagger_Basic_Demo_Jecaestevez.Controllers.ValuesController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific  item.
+            </summary>
+            <param name="id"></param>        
+        </member>
+    </members>
+</doc>
